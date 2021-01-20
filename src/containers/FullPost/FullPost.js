@@ -9,6 +9,8 @@ class FullPost extends Component {
     loadedPost: null
   }
 
+  // Should be componentDidUpdate - needs verification of id changing before making request again
+
   componentDidMount() {
     console.log(this.props);
     if (this.props.match.params.id) {
